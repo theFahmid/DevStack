@@ -10,7 +10,7 @@ async function TechPromise(): Promise<StackDataType[]> {
 function handleSelected(
   id: string,
   selectedTech: string[],
-  setSelectedTech: React.Dispatch<React.SetStateAction<any[]>>,
+  setSelectedTech: React.Dispatch<React.SetStateAction<string[]>>,
 ) {
   if (selectedTech.includes(id)) {
     const newSelectedTech = selectedTech.filter((item) => item !== id);
@@ -29,7 +29,7 @@ function StackCard({
 }: {
   card: StackDataType;
   selectedTech: string[];
-  setSelectedTech: React.Dispatch<React.SetStateAction<any[]>>;
+  setSelectedTech: React.Dispatch<React.SetStateAction<string[]>>;
 }) {
   return (
     <div className="border border-slate-200 rounded-xl p-4 flex flex-col gap-4">
@@ -51,11 +51,11 @@ function StackCard({
         <div>⭐{card.rating}</div>
       </div>
       <button
-      disabled={selectedTech.includes(card.id)}
+        disabled={selectedTech.includes(card.id)}
         className="bg-slate-900 text-white font-bold w-full py-2 rounded-xl disabled:bg-slate-400 disabled:cursor-not-allowed"
         onClick={() => handleSelected(card.id, selectedTech, setSelectedTech)}
       >
-        {selectedTech.includes(card.id) ? "Remove from Stack": "Add to Stack"}
+        {selectedTech.includes(card.id) ? "Remove from Stack" : "Add to Stack"}
       </button>
     </div>
   );
@@ -67,8 +67,8 @@ function Stack({
   setSelectedTech,
 }: {
   data: Promise<StackDataType[]>;
-  selectedTech: any[];
-  setSelectedTech: React.Dispatch<React.SetStateAction<any[]>>;
+  selectedTech: string[];
+  setSelectedTech: React.Dispatch<React.SetStateAction<string[]>>;
 }) {
   const stackData = use(data);
   return (
@@ -89,7 +89,7 @@ function getStackData() {
   return TechPromise();
 }
 
-function SelectedStackCard({ tech }) {
+function SelectedStackCard({ tech }: { tech: string }) {
   return (
     <div className="border border-slate-200 p-4 rounded-xl">
       <p>{tech}</p>
@@ -99,27 +99,38 @@ function SelectedStackCard({ tech }) {
 }
 
 function EmptyStack() {
-    return (<div className="border border-slate-300 py-4 px-2 text-center">
-        Your stack is empty
-    </div>)
+  return (
+    <div className="border border-slate-300 py-4 px-2 text-center">
+      Your stack is empty
+    </div>
+  );
 }
 function SelectedStack({
   selectedTech,
   setSelectedTech,
 }: {
-  selectedTech: any[];
-  setSelectedTech: React.Dispatch<React.SetStateAction<any[]>>;
+  selectedTech: string[];
+  setSelectedTech: React.Dispatch<React.SetStateAction<string[]>>;
 }) {
   return (
     <div className="border rounded-xl p-4 space-y-4 sticky top-20">
       <h4 className="text-2xl font-bold">Your Stack</h4>
-      <p className="text-slate-500">{selectedTech.length === 0 ? "No technologies selected yet!" : `${selectedTech.length} Technology Selected`}</p>
+      <p className="text-slate-500">
+        {selectedTech.length === 0
+          ? "No technologies selected yet!"
+          : `${selectedTech.length} Technology Selected`}
+      </p>
       {selectedTech.length === 0 ? (
-        <EmptyStack/>
+        <EmptyStack />
       ) : (
         <>
-          {selectedTech.map((tech) => SelectedStackCard((tech = { tech })))}
-          <button className="flex justify-center items-center text-center w-full border border-amber-500 text-amber-500 px-4 py-2 rounded-xl font-bold" onClick={()=>setSelectedTech([])}>Remove All</button>
+          {selectedTech.map((tech) => <SelectedStackCard key={tech} tech={tech}/>)}
+          <button
+            className="flex justify-center items-center text-center w-full border border-amber-500 text-amber-500 px-4 py-2 rounded-xl font-bold"
+            onClick={() => setSelectedTech([])}
+          >
+            Remove All
+          </button>
         </>
       )}
     </div>
@@ -127,7 +138,7 @@ function SelectedStack({
 }
 
 export default function Explore() {
-  const [selectedTech, setSelectedTech] = useState([]);
+  const [selectedTech, setSelectedTech] = useState<string[]>([]);
   return (
     <div className="mx-auto max-w-325 w-[90%] py-15">
       <h2 className="font-bold text-3xl">
