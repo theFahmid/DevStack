@@ -1,7 +1,17 @@
+import Navbar from "./components/navbar";
+import Hero from "./components/hero";
+import Explore from "./components/explore";
+import Footer from "./components/footer";
+
 function App() {
-  return <>
-  <p className="text-4xl">Hello</p>
-  </>;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Explore />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
