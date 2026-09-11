@@ -1,152 +1,152 @@
 [
   {
-    "id": "react",
-    "name": "React",
+    "id": "vue",
+    "name": "Vue.js",
     "category": "Frontend",
-    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
-    "icon": "https://cdn.simpleicons.org/react",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": "typescript",
-    "name": "TypeScript",
-    "category": "Language",
-    "description": "A strongly typed programming language that builds on JavaScript and improves developer productivity.",
-    "icon": "https://cdn.simpleicons.org/typescript",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
-  },
-  {
-    "id": "javascript",
-    "name": "JavaScript",
-    "category": "Language",
-    "description": "A versatile programming language widely used for web development, servers, applications, and more.",
-    "icon": "https://cdn.simpleicons.org/javascript",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
-  },
-  {
-    "id": "nodejs",
-    "name": "Node.js",
-    "category": "Backend",
-    "description": "A JavaScript runtime built on Chrome's V8 engine for developing fast and scalable server-side applications.",
-    "icon": "https://cdn.simpleicons.org/nodedotjs",
+    "description": "A progressive JavaScript framework for building interactive and component-based web interfaces.",
+    "icon": "https://cdn.simpleicons.org/vuedotjs",
     "rating": 4.8,
-    "difficulty": "Intermediate",
+    "difficulty": "Beginner-Friendly",
     "badge": "Popular"
   },
   {
-    "id": "express",
-    "name": "Express",
-    "category": "Backend",
-    "description": "A minimal and flexible Node.js web framework for building APIs and server-side applications.",
-    "icon": "https://cdn.simpleicons.org/express",
+    "id": "angular",
+    "name": "Angular",
+    "category": "Frontend",
+    "description": "A TypeScript-based framework for building scalable single-page applications and complex web interfaces.",
+    "icon": "https://cdn.simpleicons.org/angular",
     "rating": 4.7,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
-  },
-  {
-    "id": "postgresql",
-    "name": "PostgreSQL",
-    "category": "Database",
-    "description": "A powerful open-source object-relational database system with proven reliability and extensibility.",
-    "icon": "https://cdn.simpleicons.org/postgresql",
-    "rating": 4.9,
-    "difficulty": "Intermediate",
-    "badge": "Top SQL"
-  },
-  {
-    "id": "supabase",
-    "name": "Supabase",
-    "category": "Backend",
-    "description": "An open-source Firebase alternative providing a PostgreSQL database, authentication, storage, and APIs.",
-    "icon": "https://cdn.simpleicons.org/supabase",
-    "rating": 4.8,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": "tailwindcss",
-    "name": "Tailwind CSS",
-    "category": "Styling",
-    "description": "A utility-first CSS framework for rapidly building modern and responsive user interfaces.",
-    "icon": "https://cdn.simpleicons.org/tailwindcss",
-    "rating": 4.8,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
-  },
-  {
-    "id": "vite",
-    "name": "Vite",
-    "category": "Tools",
-    "description": "A fast modern frontend build tool that provides a quick development experience and optimized production builds.",
-    "icon": "https://cdn.simpleicons.org/vite",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
-  },
-  {
-    "id": "docker",
-    "name": "Docker",
-    "category": "DevOps",
-    "description": "A platform for developing, shipping, and running applications using lightweight and portable containers.",
-    "icon": "https://cdn.simpleicons.org/docker",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Containers"
-  },
-  {
-    "id": "git",
-    "name": "Git",
-    "category": "Tools",
-    "description": "A distributed version control system for tracking changes and collaborating on software projects.",
-    "icon": "https://cdn.simpleicons.org/git",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
-  },
-  {
-    "id": "github",
-    "name": "GitHub",
-    "category": "Tools",
-    "description": "A developer platform for hosting Git repositories, collaborating on code, and automating software workflows.",
-    "icon": "https://cdn.simpleicons.org/github",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": "python",
-    "name": "Python",
-    "category": "Language",
-    "description": "A high-level general-purpose programming language known for its simple syntax and broad ecosystem.",
-    "icon": "https://cdn.simpleicons.org/python",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": "nextjs",
-    "name": "Next.js",
-    "category": "Frontend",
-    "description": "A React framework for building full-stack web applications with routing, rendering, and optimization features.",
-    "icon": "https://cdn.simpleicons.org/nextdotjs",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
+    "difficulty": "Advanced",
     "badge": "Full Stack"
   },
   {
-    "id": "cloudflare",
-    "name": "Cloudflare",
-    "category": "DevOps",
-    "description": "A global cloud platform providing web security, CDN, DNS, serverless computing, and application deployment tools.",
-    "icon": "https://cdn.simpleicons.org/cloudflare",
+    "id": "svelte",
+    "name": "Svelte",
+    "category": "Frontend",
+    "description": "A compiler-based framework that moves much of the work from the browser to the build step.",
+    "icon": "https://cdn.simpleicons.org/svelte",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": "nestjs",
+    "name": "NestJS",
+    "category": "Backend",
+    "description": "A progressive Node.js framework for building efficient, scalable, and maintainable server-side applications.",
+    "icon": "https://cdn.simpleicons.org/nestjs",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Structured"
+  },
+  {
+    "id": "django",
+    "name": "Django",
+    "category": "Backend",
+    "description": "A high-level Python web framework designed for rapid development and clean, maintainable applications.",
+    "icon": "https://cdn.simpleicons.org/django",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Popular"
+  },
+  {
+    "id": "fastapi",
+    "name": "FastAPI",
+    "category": "Backend",
+    "description": "A modern Python framework for building high-performance APIs with automatic documentation and type validation.",
+    "icon": "https://cdn.simpleicons.org/fastapi",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A document-oriented NoSQL database designed for flexible schemas and scalable application development.",
+    "icon": "https://cdn.simpleicons.org/mongodb",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "NoSQL"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "category": "Database",
+    "description": "An in-memory data store commonly used for caching, sessions, queues, and real-time application features.",
+    "icon": "https://cdn.simpleicons.org/redis",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": "sass",
+    "name": "Sass",
+    "category": "Styling",
+    "description": "A CSS preprocessor that adds features such as variables, nesting, mixins, and reusable styles.",
+    "icon": "https://cdn.simpleicons.org/sass",
+    "rating": 4.6,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": "bootstrap",
+    "name": "Bootstrap",
+    "category": "Styling",
+    "description": "A popular frontend toolkit containing responsive layouts, components, and utilities for web development.",
+    "icon": "https://cdn.simpleicons.org/bootstrap",
+    "rating": 4.6,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "category": "DevOps",
+    "description": "An open-source platform for automating the deployment, scaling, and management of containerized applications.",
+    "icon": "https://cdn.simpleicons.org/kubernetes",
+    "rating": 4.8,
+    "difficulty": "Advanced",
+    "badge": "Containers"
+  },
+  {
+    "id": "github-actions",
+    "name": "GitHub Actions",
+    "category": "DevOps",
+    "description": "A CI/CD automation platform for building, testing, and deploying software directly from GitHub repositories.",
+    "icon": "https://cdn.simpleicons.org/githubactions",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Automation"
+  },
+  {
+    "id": "rust",
+    "name": "Rust",
+    "category": "Language",
+    "description": "A systems programming language focused on performance, memory safety, and reliable concurrency.",
+    "icon": "https://cdn.simpleicons.org/rust",
+    "rating": 4.8,
+    "difficulty": "Advanced",
+    "badge": "Powerful"
+  },
+  {
+    "id": "go",
+    "name": "Go",
+    "category": "Language",
+    "description": "A statically typed programming language designed for simplicity, concurrency, and efficient backend systems.",
+    "icon": "https://cdn.simpleicons.org/go",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "category": "Tools",
+    "description": "A platform for designing, testing, documenting, and collaborating on APIs and backend services.",
+    "icon": "https://cdn.simpleicons.org/postman",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
   }
 ]

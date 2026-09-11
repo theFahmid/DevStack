@@ -3,7 +3,7 @@ export default function StackHeader() {
     <>
       <h2 className="font-bold text-3xl">
         Explore the{" "}
-        <span className="bg-linear-to-r from-fuchsia-500 to-pink-500 bg-clip-text text-transparent">
+        <span className="brand-gradient bg-clip-text text-transparent">
           Technologies
         </span>
       </h2>

@@ -26,10 +26,12 @@ export function Card({
   setSelectedStack,
 }: StackDataItemProp) {
   return (
-    <div className={`${selectedStack.includes(data) ? "border-pink-500 shadow-md" :"border-slate-200"} border rounded-xl p-4 flex flex-col gap-4 justify-between`}>
+    <div
+      className={`${selectedStack.includes(data) ? "border-pink-500 shadow-md" : "border-slate-200"} border rounded-xl p-4 flex flex-col gap-4 justify-between`}
+    >
       <div className="flex justify-between items-start">
         <img src={data.icon} alt={data.name} className="h-8 w-auto" />
-        <p className="text-green-500 bg-green-100 rounded-full px-3 py-1 text-xs font-bold">
+        <p className="text-pink-500 bg-pink-100 rounded-full px-3 py-1 text-xs font-bold">
           {data.badge}
         </p>
       </div>
@@ -46,7 +48,7 @@ export function Card({
       </div>
       <button
         disabled={selectedStack.includes(data)}
-        className="bg-slate-900 text-white font-bold w-full py-2 rounded-xl disabled:bg-slate-400 disabled:cursor-not-allowed"
+        className={`bg-slate-900 text-white font-bold w-full py-2 rounded-xl disabled:bg-pink-100 disabled:text-pink-500  ${selectedStack.includes(data) ? "cursor-not-allowed" : "cursor-pointer"}`}
         onClick={() => addToStack({ data, selectedStack, setSelectedStack })}
       >
         {selectedStack.includes(data) ? "Added to Stack" : "Add to Stack"}

@@ -4,7 +4,7 @@ import { SelectedCard } from "./selectedCard";
 
 function EmptyStack() {
   return (
-    <div className="border border-slate-300 py-4 px-2 text-center">
+    <div className="border-dotted border text-xs text-slate-500 border-slate-300 py-4 px-2 text-center rounded-xl ">
       Your stack is empty
     </div>
   );
@@ -31,9 +31,9 @@ export default function SelectedStack({
   setSelectedStack,
 }: StackProp) {
   return (
-    <div className="p-4 border border-slate-300 rounded-xl space-y-4">
+    <div className="p-4 border border-slate-300 rounded-xl space-y-4 md:sticky md:top-20">
       <div>
-        <h3 className="font-bold text-2xl">Your Stack</h3>
+        <h3 className="font-bold text-xl">Your Stack</h3>
         <p>
           {selectedStack.length === 0
             ? "No technologies selected yet."

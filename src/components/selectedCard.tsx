@@ -30,8 +30,8 @@ export function SelectedCard({
     <div className="border border-slate-200 p-4 rounded-xl grid grid-cols-[auto_1fr_auto] gap-4">
       <img src={data.icon} alt={data.name} className="h-10 w-auto" />
       <div>
-        <p>{data.name}</p>
-        <p>{data.category}</p>
+        <p className="font-bold text-sm">{data.name}</p>
+        <p className="text-slate-500 text-xs">{data.category}</p>
       </div>
       <button
         onClick={() =>

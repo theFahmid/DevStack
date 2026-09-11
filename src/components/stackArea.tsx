@@ -10,7 +10,7 @@ export default function StackArea() {
   return (
     <div className="mx-auto max-w-325 w-[90%] py-15">
       <StackHeader />
-      <div className="grid grid-cols-1 md:grid-cols-[auto_300px] gap-4 my-4">
+      <div className="grid grid-cols-1 md:grid-cols-[auto_300px] gap-4 my-4 items-start">
         <Suspense fallback={<p>Loading...</p>}>
           <Stack
             data={use(StackDataPromise)}
