@@ -5,9 +5,20 @@
     --font-sans: 'Plus Jakarta Sans', sans-serif;
 }
 
-button:not(:disabled) {
+button:not(:disabled):not(.card-btn) {
     cursor: pointer;
 }
+
 .brand-gradient {
-    background-image: linear-gradient(to right, #3F2B96, #ec4899);
+    background-image: linear-gradient(to top right, var(--color-orange-500), var(--color-pink-500), var(--color-violet-500));
+}
+
+button.brand-gradient:hover {
+    background-image: linear-gradient(to left bottom, var(--color-orange-500), var(--color-pink-500), var(--color-violet-500));
+
+}
+
+a:hover {
+    transition: 0.3s;
+    color: var(--color-slate-800)
 }

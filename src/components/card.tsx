@@ -6,20 +6,35 @@ function addToStack({
   selectedStack,
   setSelectedStack,
 }: StackDataItemProp) {
-  const newSelectedStack = [...selectedStack, data];
-  setSelectedStack(newSelectedStack);
-  toast.success(`${data.name} has been added to your stack`, {
-    position: "top-right",
-    autoClose: 3000,
-    hideProgressBar: false,
-    closeOnClick: false,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "colored",
-    transition: Flip,
-  });
+  if (!selectedStack.includes(data)) {
+    const newSelectedStack = [...selectedStack, data];
+    setSelectedStack(newSelectedStack);
+    toast.success(`${data.name} has been added to your stack`, {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Flip,
+    });
+  } else {
+    toast.error(`${data.name} already has been added to your stack`, {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Flip,
+    });
+  }
 }
+
 export function Card({
   data,
   selectedStack,
@@ -47,8 +62,8 @@ export function Card({
         <div>⭐{data.rating}</div>
       </div>
       <button
-        disabled={selectedStack.includes(data)}
-        className={`bg-slate-900 text-white font-bold w-full py-2 rounded-xl disabled:bg-pink-100 disabled:text-pink-500  ${selectedStack.includes(data) ? "cursor-not-allowed" : "cursor-pointer"}`}
+        // disabled={selectedStack.includes(data)}
+        className={`card-btn font-bold w-full py-2 rounded-xl ${selectedStack.includes(data) ? "cursor-not-allowed text-pink-500 bg-pink-100" : "cursor-pointer bg-slate-900 text-white"}`}
         onClick={() => addToStack({ data, selectedStack, setSelectedStack })}
       >
         {selectedStack.includes(data) ? "Added to Stack" : "Add to Stack"}
