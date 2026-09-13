@@ -13,7 +13,7 @@ export default function Hero() {
           Explore frontend, backend, database, and tooling options, compare them
           side by side, and put together the stack that fits your next project.
         </p>
-        <div className="flex gap-4 md:flex-row flex-col">
+        <div className="flex gap-4 lg:flex-row flex-col">
             <button className="px-4 py-2 text-white font-medium brand-gradient rounded-lg">Explore Technologies</button>
             <button className="px-4 py-2 border font-medium border-slate-300 rounded-lg">Learn More</button>
         </div>

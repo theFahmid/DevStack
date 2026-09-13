@@ -3,10 +3,16 @@ import Hamburger from "../assets/hamburger.png";
 export default function Navbar() {
   return (
     <div className="sticky top-0 border-b-slate-300 border-b bg-white z-100">
-      <nav className="grid items-center grid-cols-3 md:flex md:justify-between md:items-center w-[90%] mx-auto max-w-325 py-4">
-        <img src={Hamburger} alt="Menu" className="block md:hidden cursor-pointer" />
-        <img src={NavLogo} alt="DevStack Logo" />
-        <ul className="hidden md:flex items-center justify-between gap-8">
+      <nav className="flex justify-between items-center w-[90%] mx-auto max-w-325 py-4">
+        <div className="flex gap-4 items-center justify-center">
+          <img
+            src={Hamburger}
+            alt="Menu"
+            className="block lg:hidden cursor-pointer"
+          />
+          <img src={NavLogo} alt="DevStack Logo" />
+        </div>
+        <ul className="hidden lg:flex items-center justify-between gap-8">
           <li>
             <a href="#" className="font-bold text-orange-700">
               Home
